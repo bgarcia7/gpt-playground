@@ -8,8 +8,8 @@ curl -X POST 'http://localhost:3000/api/notion' -d '{
 }' -H 'content-type: application/json'
 */
 
-// missing inputs
-// incorrect inputs for all 3 inputs
+// TODO: test for missing inputs
+// TODO: test for incorrect inputs for all 3 inputs
 
 export default async function handler(req, res) {
   try {
