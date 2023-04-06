@@ -44,10 +44,10 @@ export default async function handler(req, res) {
       },
     });
     console.log(response);
+    res.status(200).json({ 'status': '200', 'data': 'todo item uploaded' })
   } catch (e) {
     // TODO: handle errors better than this
+    console.error(e);
     res.status(400).json({ 'status': '400', 'data': 'something went wrong' })
   }
-
-
 }
